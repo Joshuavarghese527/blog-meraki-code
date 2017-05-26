@@ -33,6 +33,10 @@ gem 'jbuilder', '~> 2.5'
 gem 'frontend-generators'
 
 gem 'devise'
+gem "carrierwave"
+gem "mini_magick"
+
+gem 'ckeditor', '~> 4.1'
 
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
