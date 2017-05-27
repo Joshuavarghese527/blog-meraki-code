@@ -1,4 +1,6 @@
 class Post < ApplicationRecord
+  extend FriendlyId
+  friendly_id :title, use: [:slugged, :finders]
   #This validates presence of title, and makes sure that the length is not more than 140 words
   validates :title, presence: true, length: {maximum: 140}
   validates :description, presence: true, length: {maximum: 400}

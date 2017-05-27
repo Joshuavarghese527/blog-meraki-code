@@ -38,6 +38,10 @@ gem "mini_magick"
 
 gem 'ckeditor', '~> 4.1'
 
+gem 'friendly_id', '~> 5.1'
+
+gem 'social-share-button'
+
 gem 'activeadmin', github: 'activeadmin'
 gem 'active_skin'
 gem 'rails_12factor', group: :production

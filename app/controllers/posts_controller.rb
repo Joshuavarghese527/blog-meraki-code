@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+    layout "clean_blog"
+
  before_action :find_post, only: [:edit, :update, :show, :delete]
 
   # Index action to render all posts
