@@ -1,3 +1,13 @@
+<% content_for :head do %>
+  <title><%= @post.title %> | MerakiCode | Blog</title>
+
+  <!-- Open Graph data -->
+  <meta property="og:site_name" content="MerakiCode">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="<%= @post.title %>">
+  <meta property="og:description" content="<%= @post.description %>">
+  <meta property="og:image" content="<%= @post.avatar %>">
+<% end %>
 <%= render 'clean_blogs/shim' %>
 <%= render 'clean_blogs/navigation' %>
 <%= render 'clean_blogs/header' %>
